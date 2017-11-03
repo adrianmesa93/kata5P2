@@ -25,13 +25,33 @@ public class Kata4 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
-        String filename = "C:/Users/usuario/Documents/NetBeansProjects/kata3/src/kata4/main/emails.txt";
-        List<Mail> mailList=MailListReader.read(filename);
-        Histogram<String> histogram = MailHistogramBuilder.build(mailList);
-        HistogramDisplay histoDisplay = new HistogramDisplay(histogram);
-        histoDisplay.execute();
-        
-        
+    
+    private String filename;
+    private List<Mail> mailList;
+    private Histogram<String> histogram;
+    private HistogramDisplay histoDisplay;
+    public static void main(String[] args) throws FileNotFoundException, IOException, Exception {
+        Kata4 kata4 = new Kata4();
+        kata4.execute();  
+    }
+    
+    private void execute()throws Exception{
+        input();
+        process();
+        output();
+    }
+    
+    private void input() throws FileNotFoundException, IOException{
+        filename = "C:/Users/usuario/Documents/NetBeansProjects/kata3/src/kata4/main/emails.txt";
+        mailList=MailListReader.read(filename);
+    }
+    
+    private void process(){
+        histogram = MailHistogramBuilder.build(mailList);
+    }
+    
+    private void output(){
+        histoDisplay = new HistogramDisplay(histogram);
+        histoDisplay.execute(); 
     }
 }
