@@ -1,14 +1,14 @@
-package kata4.main;
+package kata5P2.main;
 
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-import kata4.view.HistogramDisplay;
-import kata4.model.Histogram;
-import kata4.model.Mail;
-import kata4.view.MailHistogramBuilder;
-import kata4.view.MailListReader;
+import kata5P2.view.HistogramDisplay;
+import kata5P2.model.Histogram;
+import kata5P2.model.Mail;
+import kata5P2.view.MailHistogramBuilder;
+import kata5P2.view.MailListReader;
 
 /*
  * To change this template, choose Tools | Templates
@@ -20,7 +20,7 @@ import kata4.view.MailListReader;
  *
  * @author usuario
  */
-public class Kata4 {
+public class Kata5P2 {
 
     /**
      * @param args the command line arguments
@@ -31,7 +31,7 @@ public class Kata4 {
     private Histogram<String> histogram;
     private HistogramDisplay histoDisplay;
     public static void main(String[] args) throws FileNotFoundException, IOException, Exception {
-        Kata4 kata4 = new Kata4();
+        Kata5P2 kata4 = new Kata5P2();
         kata4.execute();  
     }
     
@@ -42,7 +42,7 @@ public class Kata4 {
     }
     
     private void input() throws FileNotFoundException, IOException{
-        filename = "C:/Users/usuario/Documents/NetBeansProjects/kata3/src/kata4/main/emails.txt";
+        filename = "C:/Users/usuario/Documents/NetBeansProjects/kata5/src/kata5P2/main/emails.txt";
         mailList=MailListReader.read(filename);
     }
     

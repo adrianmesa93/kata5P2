@@ -1,4 +1,4 @@
-package kata4.model;
+package kata5P2.model;
 
 /*
  * To change this template, choose Tools | Templates

@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package kata4.view;
+package kata5P2.view;
 
 import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.JPanel;
-import kata4.model.Histogram;
+import kata5P2.model.Histogram;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
