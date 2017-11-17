@@ -4,6 +4,7 @@
  */
 package kata5P2.view;
 
+import java.util.ArrayList;
 import java.util.List;
 import kata5P2.model.Histogram;
 import kata5P2.model.Mail;
